@@ -11,9 +11,10 @@ We have tested the following versions of OS and softwares:
 - PyTorch 1.6.0
 - Python 3.7.13
 
-2. Install all other dependencies.
+2. Install all other dependencies via: pip install opencv-python, tqdm
 
-Install opencv-python, tqdm.
+### Dataset
+The CrowdHuman dataset can be downloaded from http://www.crowdhuman.org/. The path of the dataset is set in config.py
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
