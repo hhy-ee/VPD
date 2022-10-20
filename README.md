@@ -11,6 +11,7 @@ We have tested the following versions of OS and softwares:
 - Python 3.7.13
 
 2. Install all other dependencies.
+
 Install opencv-python, tqdm.
 
 
