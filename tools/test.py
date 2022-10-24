@@ -30,7 +30,6 @@ def eval_all(args, config, network):
     devices = misc_utils.device_parser(str_devices)
     # load data
     crowdhuman = CrowdHuman(config, if_train=False)
-    #crowdhuman.records = crowdhuman.records[:10]
     # multiprocessing
     num_devs = len(devices)
     len_dataset = len(crowdhuman)
@@ -58,11 +57,7 @@ def eval_all(args, config, network):
     # evaluation
     eval_path = os.path.join(evalDir, 'eval-{}.json'.format(args.resume_weights))
     eval_fid = open(eval_path,'w')
-    # res_line, JI = compute_JI.evaluation_all(fpath, 'box')
-    # for line in res_line:
-    #     eval_fid.write(line+'\n')
     AP, MR = compute_APMR.compute_APMR(fpath, config.eval_source, 'box')
-    # line = 'AP:{:.4f}, MR:{:.4f}, JI:{:.4f}.'.format(AP, MR, JI)
     line = 'AP:{:.4f}, MR:{:.4f}.'.format(AP, MR)
     print(line)
     eval_fid.write(line+'\n')
@@ -81,10 +76,7 @@ def eval_all_epoch(args, config, network):
         str_devices = args.devices
         devices = misc_utils.device_parser(str_devices)
         # load data
-        if 'CityPersons' in config.train_source:
-            crowdhuman = CityPersons(config, if_train=False)
-        else:
-            crowdhuman = CrowdHuman(config, if_train=False)
+        crowdhuman = CrowdHuman(config, if_train=False)
         # multiprocessing
         num_devs = len(devices)
         len_dataset = len(crowdhuman)
@@ -112,11 +104,7 @@ def eval_all_epoch(args, config, network):
         # evaluation
         eval_path = os.path.join(evalDir, 'eval-{}.json'.format(str(epoch_id)))
         eval_fid = open(eval_path,'w')
-        # res_line, JI = compute_JI.evaluation_all(fpath, 'box')
-        # for line in res_line:
-        #     eval_fid.write(line+'\n')
         AP, MR = compute_APMR.compute_APMR(fpath, config.eval_source, 'box')
-        # line = 'AP:{:.4f}, MR:{:.4f}, JI:{:.4f}.'.format(AP, MR, JI)
         line = 'AP:{:.4f}, MR:{:.4f}.'.format(AP, MR)
         print(line)
         eval_fid.write(line+'\n')
@@ -202,9 +190,7 @@ def run_test():
     parser.add_argument('--devices', '-d', default='0', type=str)
     os.environ['NCCL_IB_DISABLE'] = '1'
 
-    # args = parser.parse_args()
-    args = parser.parse_args(['--model_dir', 'atss_fpn_spd+', 
-                                  '--resume_weights', '30'])
+    args = parser.parse_args()
 
     # import libs
     model_root_dir = os.path.join(model_dir, args.model_dir)
