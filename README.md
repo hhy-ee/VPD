@@ -59,11 +59,11 @@ We offer the pre-trained weights on ResNet-50 FPN:
 | RetinaNet (SPD+) | 56.0% | 56.3% |  
 | RetinaNet (VPD) | 56.8% | 56.9% |  
 
-| Architecture | Backbone | mIOU(SS) | mIOU(MS & Flip) | Weight |
-|:---:|:---:|:---:|:---:| :---:|
-| CMX (SegFormer) | MiT-B2 | 54.1% | 54.4% | [NYU-MiT-B2](https://drive.google.com/file/d/1hlyglGnEB0pnWXfHPtBtCGGlKMDh2K--/view?usp=sharing) |
-| CMX (SegFormer) | MiT-B4 | 56.0% | 56.3% |  |
-| CMX (SegFormer) | MiT-B5 | 56.8% | 56.9% |  |
+| Architecture | Backbone | mIOU(SS) | Weight |
+|:---:|:---:|:---:| :---:|
+| CMX (SegFormer) | MiT-B2 | 54.1% | [NYU-MiT-B2](https://drive.google.com/file/d/1hlyglGnEB0pnWXfHPtBtCGGlKMDh2K--/view?usp=sharing) |
+| CMX (SegFormer) | MiT-B4 | 56.0% |  |
+| CMX (SegFormer) | MiT-B5 | 56.8% |  |
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
