@@ -59,6 +59,10 @@ We offer the pre-trained weights on ResNet-50 FPN:
 | RetinaNet (SPD) | MiT-B2 | 54.1% |  |
 | RetinaNet (SPD) | MiT-B4 | 56.0% |  |
 | RetinaNet (SPD) | MiT-B5 | 56.8% |  |
+|:---:|:---:|:---:| :---:|
+| RetinaNet (SPD) | MiT-B2 | 54.1% |  |
+| RetinaNet (SPD) | MiT-B4 | 56.0% |  |
+| RetinaNet (SPD) | MiT-B5 | 56.8% |  |
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
