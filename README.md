@@ -56,13 +56,15 @@ We offer the pre-trained weights on ResNet-50 FPN:
 
 | Method | MR | AP | Weight |
 |:---:|:---:|:---:| :---:|
-| RetinaNet (SPD) | MiT-B2 | 54.1% |  |
-| RetinaNet (SPD) | MiT-B4 | 56.0% |  |
-| RetinaNet (SPD) | MiT-B5 | 56.8% |  |
-|:---:|:---:|:---:| :---:|
-| RetinaNet (SPD) | MiT-B2 | 54.1% |  |
-| RetinaNet (SPD) | MiT-B4 | 56.0% |  |
-| RetinaNet (SPD) | MiT-B5 | 56.8% |  |
+| RetinaNet (SPD) | 60.8% | 84.9% |  |
+| RetinaNet (SPD+) | 60.5% | 85.0% |  |
+| RetinaNet (VPD) | 56.4% | 86.4% |  |
+| ATSS (SPD) | 54.8% | 85.4% |  |
+| ATSS (SPD+) | 54.0% | 86.6% |  |
+| ATSS (VPD) | 52.1% | 87.1% |  |
+| FreeAnchor (SPD) | 51.8% | 84.3% |  |
+| FreeAnchor (SPD+) | 51.1% | 84.5% |  |
+| FreeAnchor (VPD) | 47.4% | 84.7% |  |
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
