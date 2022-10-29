@@ -126,19 +126,7 @@ def inference(config, network, model_file, device, dataset, start, end, result_q
     for (image, gt_boxes, im_info, ID) in data_iter:
         pred_boxes = net(image.cuda(device), im_info.cuda(device))
         scale = im_info[0, 2]
-        if config.test_nms_method == 'set_nms':
-            assert pred_boxes.shape[-1] > 6, "Not EMD Network! Using normal_nms instead."
-            assert pred_boxes.shape[-1] % 6 == 0, "Prediction dim Error!"
-            top_k = pred_boxes.shape[-1] // 6
-            n = pred_boxes.shape[0]
-            pred_boxes = pred_boxes.reshape(-1, 6)
-            idents = np.tile(np.arange(n)[:,None], (1, top_k)).reshape(-1, 1)
-            pred_boxes = np.hstack((pred_boxes, idents))
-            keep = pred_boxes[:, 4] > config.pred_cls_threshold
-            pred_boxes = pred_boxes[keep]
-            keep = nms_utils.set_cpu_nms(pred_boxes, 0.5)
-            pred_boxes = pred_boxes[keep]
-        elif config.test_nms_method == 'normal_nms':
+        if config.test_nms_method == 'normal_nms':
             assert pred_boxes.shape[-1] % 6 == 0, "Prediction dim Error!"
             pred_boxes = pred_boxes.reshape(-1, 6)
             keep = pred_boxes[:, 4] > config.pred_cls_threshold
