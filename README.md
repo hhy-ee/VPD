@@ -56,7 +56,7 @@ We offer the pre-trained weights on ResNet-50 FPN (Some unavailabel weights are 
 
 | Method | MR | AP | Weight |
 |:---:|:---:|:---:| :---:|
-| RetinaNet (SPD) | 60.8% | 84.9% | <Google drive>(https://drive.google.com/file/d/1m9r8MlXzwsqgMbitqs1xzqYK8kW8Bf_j/view?usp=sharing) |
+| RetinaNet (SPD) | 60.8% | 84.9% | [Google drive](https://drive.google.com/file/d/1m9r8MlXzwsqgMbitqs1xzqYK8kW8Bf_j/view?usp=sharing) |
 | RetinaNet (SPD+) | 60.5% | 85.0% |  |
 | RetinaNet (VPD) | 56.4% | 86.4% |  |
 | ATSS (SPD) | 54.8% | 85.4% |  |
