@@ -20,9 +20,9 @@ pip install tqdm
 ### Dataset
 The CrowdHuman dataset can be downloaded from http://www.crowdhuman.org/. Orgnize the dataset folder in the following structure:
 ```shell
-<data>
-|-- <CrowdHuman>
-    |-- <image>
+data
+|-- CrowdHuman
+    |-- image
         |-- <name1>.<ImageFormat>
         |-- <name2>.<ImageFormat>
         ...
@@ -52,7 +52,7 @@ python tools/test.py -md <method>_fpn_<spd, spd+, vpd>.py -r <epoch_num>
 The evaluation results can be found in `model/<method>/outputs/eval_dump` with epoch IDs (epoch_num, ..., 30).
 
 ## Result
-We offer the pre-trained weights on ResNet-50 FPN:
+We offer the pre-trained weights on ResNet-50 FPN (Some unavailabel weights are coming soon):
 
 | Method | MR | AP | Weight |
 |:---:|:---:|:---:| :---:|
