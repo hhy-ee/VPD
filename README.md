@@ -53,11 +53,17 @@ The evaluation results can be found in `model/<method>/outputs/eval_dump` with e
 
 ## Result
 We offer the pre-trained weights on ResNet-50 FPN:
-| Method | MR | AP | Weight |
+| Method | MR | AP | Weight 
 |:---:|:---:|:---:|:---:| :---:|
-| RetinaNet (SPD) | 54.1% | 54.4% |  |
-| RetinaNet (SPD+) | 56.0% | 56.3% |  |
-| RetinaNet (VPD) | 56.8% | 56.9% |  |
+| RetinaNet (SPD) | 54.1% | 54.4% |  
+| RetinaNet (SPD+) | 56.0% | 56.3% |  
+| RetinaNet (VPD) | 56.8% | 56.9% |  
+
+| Architecture | Backbone | mIOU(SS) | mIOU(MS & Flip) | Weight |
+|:---:|:---:|:---:|:---:| :---:|
+| CMX (SegFormer) | MiT-B2 | 54.1% | 54.4% | [NYU-MiT-B2](https://drive.google.com/file/d/1hlyglGnEB0pnWXfHPtBtCGGlKMDh2K--/view?usp=sharing) |
+| CMX (SegFormer) | MiT-B4 | 56.0% | 56.3% |  |
+| CMX (SegFormer) | MiT-B5 | 56.8% | 56.9% |  |
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
