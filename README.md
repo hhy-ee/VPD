@@ -21,7 +21,7 @@ The CrowdHuman dataset can be downloaded from http://www.crowdhuman.org/. Orgniz
 ```shell
 data
 |-- CrowdHuman
-    |-- image
+    |-- Images
         |-- <name1>.<ImageFormat>
         |-- <name2>.<ImageFormat>
         ...
