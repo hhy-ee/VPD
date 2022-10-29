@@ -58,10 +58,6 @@ We offer the pre-trained weights on ResNet-50 FPN:
 | RetinaNet (SPD) | 54.1% | 54.4% |  |
 | RetinaNet (SPD+) | 56.0% | 56.3% |  |
 | RetinaNet (VPD) | 56.8% | 56.9% |  |
-|:---:|:---:|:---:|:---:| :---:|
-| RetinaNet (SPD) | 54.1% | 54.4% |  |
-| RetinaNet (SPD+) | 56.0% | 56.3% |  |
-| RetinaNet (VPD) | 56.8% | 56.9% |  |
 
 ### Acknowledgement
 Our code is heavily based on [Crowddet](https://github.com/Purkialo/CrowdDet) and [mmdetection](https://github.com/open-mmlab/mmdetection), thanks for their excellent work!
