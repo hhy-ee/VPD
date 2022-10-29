@@ -13,8 +13,7 @@ We have tested the following versions of OS and softwares:
 
 2. Install all other dependencies via:
 ```shell
-pip install opencv-python
-pip install tqdm
+pip install -r requirements.txt
 ```
 
 ### Dataset
