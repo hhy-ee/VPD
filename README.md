@@ -57,7 +57,7 @@ We offer the pre-trained weights on ResNet-50 FPN (Some unavailable model weight
 |:---:|:---:|:---:| :---:|
 | RetinaNet (SPD) | 60.8% | 84.9% |  |
 | RetinaNet (SPD+) | 60.5% | 85.0% |  |
-| RetinaNet (VPD) | 56.4% | 86.4% | [retina_fpn_vpd](https://drive.google.com/file/d/1m9r8MlXzwsqgMbitqs1xzqYK8kW8Bf_j/view?usp=sharing) |
+| RetinaNet (VPD) | 56.2% | 86.4% | [retina_fpn_vpd](https://drive.google.com/file/d/10z0ueXMSWcvmzCNKpzK2EwSKTT0YEqV0/view?usp=sharing) |
 | ATSS (SPD) | 54.8% | 85.4% |  |
 | ATSS (SPD+) | 54.0% | 86.6% |  |
 | ATSS (VPD) | 52.1% | 87.1% | [atss_fpn_vpd](https://drive.google.com/file/d/1rVeKp20MkmhQrVYtw3FjDErkgt-8Ja0I/view?usp=sharing) |
